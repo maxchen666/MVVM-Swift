@@ -13,6 +13,8 @@
 		9A4718151A92073300F166A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A4718141A92073300F166A8 /* Images.xcassets */; };
 		9A4718181A92073300F166A8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4718161A92073300F166A8 /* LaunchScreen.xib */; };
 		9A4718241A92073300F166A8 /* MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4718231A92073300F166A8 /* MVVMTests.swift */; };
+		9A47182E1A92094A00F166A8 /* SampleDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A47182D1A92094A00F166A8 /* SampleDataModel.swift */; };
+		9A4718301A920E7C00F166A8 /* SampleDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A47182F1A920E7C00F166A8 /* SampleDataViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		9A47181D1A92073300F166A8 /* MVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4718221A92073300F166A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A4718231A92073300F166A8 /* MVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMTests.swift; sourceTree = "<group>"; };
+		9A47182D1A92094A00F166A8 /* SampleDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleDataModel.swift; sourceTree = "<group>"; };
+		9A47182F1A920E7C00F166A8 /* SampleDataViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleDataViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				9A4718141A92073300F166A8 /* Images.xcassets */,
 				9A4718161A92073300F166A8 /* LaunchScreen.xib */,
 				9A47180B1A92073300F166A8 /* Supporting Files */,
+				9A47182D1A92094A00F166A8 /* SampleDataModel.swift */,
+				9A47182F1A920E7C00F166A8 /* SampleDataViewModel.swift */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -161,6 +167,7 @@
 				TargetAttributes = {
 					9A4718071A92073300F166A8 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = X8C2YN746J;
 					};
 					9A47181C1A92073300F166A8 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -212,7 +219,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A4718301A920E7C00F166A8 /* SampleDataViewModel.swift in Sources */,
 				9A4718101A92073300F166A8 /* ViewController.swift in Sources */,
+				9A47182E1A92094A00F166A8 /* SampleDataModel.swift in Sources */,
 				9A47180E1A92073300F166A8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +345,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MVVM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +356,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MVVM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
